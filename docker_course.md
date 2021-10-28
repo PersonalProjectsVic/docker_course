@@ -460,7 +460,7 @@ docker run --rm {image-name}
 ---
 Ejecutar un comando en un contenedor que se encuentra en ejecución
 ```sh
-docker exce -it {container-name} {comand}
+docker exec -it {container-name} {comand}
 ```
 ---
 Crear un volumen de docker
