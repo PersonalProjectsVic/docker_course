@@ -354,6 +354,10 @@ docker-compose logs -f {name}
 Ejecutar comandos en los contenedores de los servicios
 ```sh
 docker-compose exec {name} {comand}
+
+#comando de shell
+docker exec -it {name} bash
+
 ```
 
 Revisar componentes levantados
@@ -461,6 +465,9 @@ docker run --rm {image-name}
 Ejecutar un comando en un contenedor que se encuentra en ejecución
 ```sh
 docker exec -it {container-name} {comand}
+
+#Ejemplo de bash
+docker exec -it {name} bash
 ```
 ---
 Crear un volumen de docker
@@ -591,6 +598,10 @@ docker-compose logs -f {name}
 Ejecutar comandos en los contenedores de los servicios
 ```sh
 docker-compose exec {name} {comand}
+
+#Ejemplo de bash
+docker-compose exec -it {name} bash
+
 ```
 ---
 Revisar componentes levantados
